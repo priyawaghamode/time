@@ -1,9 +1,32 @@
 import pytz, datetime
+def check_user_input(input):
+    try:
+        # Convert it into integer
+        val = int(input)
+        print(val)
+    except ValueError:
+        try:
+            # Convert it into float
+            val = float(input)
+            print("No..Input is a float  number.It is not allowed Number = ", val)
+        except ValueError:
+            print("No.. input is not a number. It's a string")
+
 year=int(input("enter year(YYYY): "))
+check_user_input(year)
+
 month=int(input("enter month(MM): "))
+check_user_input(month)
+
 date=int(input("enter date(DD): "))
+check_user_input(date)
+
 hour=int(input("enter hour(HH): "))
+check_user_input(hour)
+
 minute=int(input("enter minutes(MM): "))
+check_user_input(minute)
+
 
 #convert to the date
 user_time=datetime.datetime(year,month,date,hour,minute)
