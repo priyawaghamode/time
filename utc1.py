@@ -46,4 +46,3 @@ print("\nNepal time is", Nepal_time.isoformat())
 print("\nJapan time is", Japan_time.isoformat())
 print("\nItaly time is", Italy_time.isoformat())
 print("\nIsrael time is", Israel_time.isoformat())
-
